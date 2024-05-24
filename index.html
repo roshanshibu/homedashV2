@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeDash</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="slider.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <p>Fri, May 24</p>
+      <p>2:54 PM</p>
+    </header>
+    <div class="columns">
+      <div class="col1">
+        <section id="weatherIcon">
+          <img src="assets/weatherIcons/cloudy.png" alt="cloudy" />
+          <div>
+            <h1>16.5<span> °C</span></h1>
+            <p>Feels like 12°C in Leimen</p>
+            <p>As of 2:03 PM</p>
+          </div>
+        </section>
+        <section class="weatherChart">
+          Temperature
+          <canvas id="temperatureChart"></canvas>
+        </section>
+        <section class="weatherChart">
+          Precipitation
+          <canvas id="precipitationChart"></canvas>
+        </section>
+      </div>
+      <div class="col2">
+        <section id="calendar">
+          <p>May</p>
+          <div>
+            <p>Mo</p>
+            <p>Tu</p>
+            <p>We</p>
+            <p>Th</p>
+            <p>Fr</p>
+            <p>Sa</p>
+            <p>Su</p>
+          </div>
+        </section>
+        <div class="miniContainer1">
+          <div>
+            <section id="lamp">
+              Lamp
+              <div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </section>
+            <section id="netSpeed">
+              Internet Speed
+              <div>15Mbps</div>
+            </section>
+          </div>
+          <section id="notes">
+            Notes
+            <div>No notes to display</div>
+          </section>
+        </div>
+      </div>
+      <div class="col3">
+        <section id="photos">
+          Photos
+          <div>
+            <p>Eppingen Hike</p>
+            <p>May 20, 2024</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="weatherCharts.js"></script>
+    <script src="calendar.js"></script>
+  </body>
+</html>
